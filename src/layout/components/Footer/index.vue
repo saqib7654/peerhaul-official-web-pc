@@ -1,11 +1,11 @@
 <template>
     <div class="footer-con flex-center flex-col">
             <div
-                class="flex-x-between flex-items-center pb-6 relative w-full p-x-25px"
+                class="flex-x-between flex-items-start pb-6 relative w-full p-x-25px"
             >
                 <img
-                    src="@/assets/pics/logo_small.png"
-                    class="w-50 h-50"
+                    src="@/assets/pics/logo-new.png"
+                    class="w-50 h-fit"
                     alt=""
                 />
                 <div class="text-end">

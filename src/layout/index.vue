@@ -37,7 +37,7 @@ import Menu from './components/Menu/index.vue';
 import Footer from './components/Footer/index.vue';
 import userStore from '@/store/userStore';
 
-import LOGO from '@/assets/pics/logo.png';
+import LOGO from '@/assets/pics/logo-new.png';
 
 const routerNameList = ['Support', 'Message'];
 let router = useRouter();

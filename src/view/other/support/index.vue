@@ -1,9 +1,9 @@
 <template>
     <div class="support-con">
         <img
-            src="@/assets/pics/logo_small.png"
+            src="@/assets/pics/logo-new.png"
             alt=""
-            class="h-75 w-75 mb-12"
+            class="h-75 w-75 mb-12 object-contain"
         />
         <div class="font-bold font-size-6 mb-4.5">Support & Legal</div>
         <div class="support-list">
