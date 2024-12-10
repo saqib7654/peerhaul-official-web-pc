@@ -1,0 +1,14 @@
+{
+  "token": {
+    "fontFamily": "Roboto",
+    "colorPrimary": "#F86C00",
+    "colorTextBase": "#333333",
+    "colorError": "#DC3545",
+    "colorLink": "#0000FF",
+    "colorLinkHover": "#0000FF",
+    "colorTextDisabled": "#999999",
+    "fontSize": 16,
+    "fontSizeLG": 16,
+    "colorBorderSecondary": "#ECECEC"
+  }
+}

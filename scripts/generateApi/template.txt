@@ -1,0 +1,2 @@
+/** #{comment} */
+export const #{name}Api = generateApi<#{typeName}Request, #{typeName}Response>('#{url}', '#{method}')

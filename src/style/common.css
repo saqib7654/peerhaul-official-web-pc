@@ -1,0 +1,24 @@
+/* 弹窗标题 */
+.modal-title {
+    font-size: 20px;
+    text-align: center;
+    color: #333333;
+    font-family: PingFangSCBold-Bold;
+}
+/** 弹窗底部 */
+.modal-footer {
+    text-align: center;
+}
+
+/* 按钮调整 */
+.ant-btn {
+    font-size: 14px;
+    padding: 18px 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-btn.ant-btn-lg {
+    font-size: 14px;
+}
