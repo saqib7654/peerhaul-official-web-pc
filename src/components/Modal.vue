@@ -81,7 +81,7 @@ const handleConfirm = () => {
         justify-content: center;
 
         .title {
-            font-family: PingFangSCBold-Bold;
+            font-family: inherit;
             font-size: 20px;
             font-weight: 500;
             line-height: 100%;

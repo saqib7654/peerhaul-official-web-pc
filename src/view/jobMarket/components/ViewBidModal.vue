@@ -16,7 +16,7 @@
                             </div>
                         </ASpace>
                         <ASpace class="col-start-1 col-end-2">
-                            <span class="font-size-16px"> Deliveries:</span>
+                            <span class="font-size-16px" style="font-family: Nunito;"> Deliveries:</span>
                             <img src="../../../assets/icons/icon_delivered_2.svg" alt="" width="18">
                             <span>{{ detail.deliveredCount }}</span>
                         </ASpace>
@@ -27,9 +27,13 @@
                     <div class="flex justify-between items-center m-t-1">
                         <ASpace size="small" direction="horizontal">
                             <ARate :value="detail.avgScore" disabled />
-                            <span @click="goPage" class="font-size-14px color-info cursor-pointer">({{
+                            <p @click="goPage" class="font-size-14px color-info cursor-pointer">({{
                                 detail.reviewCount
-                            }} review)</span>
+                            }}
+                              <span>    {{ detail.reviewCount === 1 ? "review" : "reviews" }}</span>  
+                            )
+                        </p>
+                            
                         </ASpace>
                     </div>
                     <div class="font-size-18px m-b-2 m-t-4 flex gap-1">
@@ -177,7 +181,8 @@ const goPage = () => {
 }
 
 .bidsModal .slick-slider .bidImg {
-aspect-ratio: 1/1;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
 }
 
 .bidsModal .ant-rate {

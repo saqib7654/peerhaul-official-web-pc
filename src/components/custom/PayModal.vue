@@ -14,7 +14,7 @@
 
                     </div>
                     <button class="h-52px w-full bg-transparent rounded-8px color-#000 cursor-pointer"
-                        style="border: 1px solid #E4E3E6;">+ Add New Card</button>
+                        style="border: 1px solid #E4E3E6; font-family: Nunito;">+ Add New Card</button>
                 </div>
 
                 <!-- <div class="font-size-18px m-y-20px cost">
