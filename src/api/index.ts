@@ -4360,6 +4360,7 @@ export interface MemberDriverDetailResponse {
   deliveredCount?: number
   avgScore?: number
   reviewCount?: number
+  sinceYear?: number
 }
 
 /**
@@ -4417,6 +4418,10 @@ export interface MemberDriverQueryPageResponse {
     memberId?: string
     score?: number
     desc?: string
+    memberAvatar?: string
+    memberName?: string
+    createTime?: string
+    evaluateDesc?: string
   }[]
 }
 

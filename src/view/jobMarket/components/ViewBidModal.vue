@@ -16,9 +16,9 @@
                             </div>
                         </ASpace>
                         <ASpace class="col-start-1 col-end-2">
-                            <span class="font-size-16px" style="font-family: Nunito;"> Deliveries:</span>
+                            <span class="font-size-16px font-medium color-#333333"> Deliveries:</span>
                             <img src="../../../assets/icons/icon_delivered_2.svg" alt="" width="18">
-                            <span>{{ detail.deliveredCount }}</span>
+                            <span class="font-size-16px font-medium color-#9E9B9B">{{ detail.deliveredCount }}</span>
                         </ASpace>
                         <Button
                             class="btn row-start-1 col-start-2 w-29 h-10 gap-2 ms-auto bg-#F0F2F5 border-1 border-#EAECF3"><img
@@ -27,44 +27,44 @@
                     <div class="flex justify-between items-center m-t-1">
                         <ASpace size="small" direction="horizontal">
                             <ARate :value="detail.avgScore" disabled />
-                            <p @click="goPage" class="font-size-14px color-info cursor-pointer">({{
+                            <p @click="goPage" class="font-size-16px color-info cursor-pointer mb-0 font-regular">({{
                                 detail.reviewCount
-                            }}
-                              <span>    {{ detail.reviewCount === 1 ? "review" : "reviews" }}</span>  
-                            )
-                        </p>
-                            
+                                }}
+                                <span>{{ detail.reviewCount === 1 ? 'review' : 'reviews' }}</span>
+                                )
+                            </p>
+
                         </ASpace>
                     </div>
                     <div class="font-size-18px m-b-2 m-t-4 flex gap-1">
                         <span class="color-#9E9B9B">Delivery date:</span>
-                        <span class="font-semibold color-#333333">{{
+                        <span class="font-medium color-#333333">{{
                             detail.deliveryDate
-                        }}</span>
+                            }}</span>
                     </div>
                     <div class="font-size-18px m-b-2 flex gap-1">
                         <span class="color-#9E9B9B">Delivery time:</span>
-                        <span class="font-semibold color-#333333">{{
+                        <span class="font-medium color-#333333">{{
                             detail.deliveryTime ?? 'Anytime'
-                        }}</span>
+                            }}</span>
                     </div>
 
                     <div class="font-size-18px m-b-2 flex gap-1">
                         <span class="color-#9E9B9B">Vehicle:</span>
-                        <span class="font-semibold color-#333333">{{
+                        <span class="color-#333333">{{
                             detail.carName
-                        }}</span>
+                            }}</span>
                     </div>
                     <div class="font-size-18px m-b-2 flex gap-1">
                         <span class="color-#9E9B9B">Vehicle Type:</span>
-                        <span class="font-semibold color-#333333"> {{ detail.carType }}</span>
+                        <span class="color-#333333"> {{ detail.carType }}</span>
                     </div>
                     <div class="font-size-18px m-b-2">
                         <span class="color-#9E9B9B">Driver extra notes:
                         </span>
                         <span class="color-#333333">{{
                             detail.extraNotes
-                        }}</span>
+                            }}</span>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,8 @@
             <div class="w-full flex items-center gap-4 justify-end modalFooter">
                 <Button class="font-size-14px flex gap-1 bg-#F0F2F5 h-10 border-#F0F2F5">
                     <span class="color-#333333 font-size-16px" style="font-weight: 500;">Total Delivery Cost:</span>
-                    <span class="color-#0000FF font-size-18px" style="font-weight: 500;">${{ detail.totalAmount }}</span></Button>
+                    <span class="color-#0000FF font-size-18px" style="font-weight: 500;">${{ detail.totalAmount
+                        }}</span></Button>
                 <Button type="primary" class="h-10 font-size-16px" @click="handleConfirm">Accept Bid</Button>
             </div>
         </template>
