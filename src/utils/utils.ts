@@ -1,7 +1,7 @@
 import { message } from "ant-design-vue";
 
 export const passwordReg =
-  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})/;
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*\.])(?=.{6,})/;
 export const validatePass = (_rule: any, value: string) => {
   //   if (!value) {
   //     return Promise.reject(new Error('Enter Password.'));
