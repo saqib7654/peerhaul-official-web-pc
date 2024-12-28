@@ -45,7 +45,7 @@
                     <div class="font-size-18px m-b-2 flex gap-1">
                         <span class="color-#9E9B9B">Delivery time:</span>
                         <span class="font-medium color-#333333">{{
-                            detail.deliveryTime ?? 'Anytime'
+                            detail.deliveryTime ?? 'Not specified'
                             }}</span>
                     </div>
 

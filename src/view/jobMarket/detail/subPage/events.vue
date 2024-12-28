@@ -4,62 +4,62 @@
             <Col :span="12">
             <div class="box-con">
                 <div class="font-size-6 font-bold mb-6">
-                    Pickup person details
+                    Pickup Details
                 </div>
                 <div class="mb-4">
-                    <span class="font-bold mr-1">Name: </span><span>{{ delivery.pickupContactUserName }}</span>
+                    <span class="font-bold mr-1">Name: </span><span class="color-#9E9B9B">{{ delivery.pickupContactUserName }}</span>
                 </div>
                 <div class="mb-4">
-                    <span class="font-bold mr-1">Contact: </span><span>{{ delivery.pickupContactPhone }}</span>
+                    <span class="font-bold mr-1">Contact: </span><span class="color-#9E9B9B">{{ delivery.pickupContactPhone }}</span>
                 </div>
                 <div class="mb-4">
-                    <span class="font-bold mr-1">Email: </span><span>{{ delivery.pickupContactEmail }}</span>
+                    <span class="font-bold mr-1">Email: </span><span class="color-#9E9B9B">{{ delivery.pickupContactEmail }}</span>
                 </div>
                 <div class="mb-4">
                     <span class="font-bold mr-1">Pickup time: </span>
-                    <span>
-                        {{ delivery.pickupStartTime || 'Any Time' }},to,{{ delivery.pickupEndTime || 'Any Time' }}
+                    <span class="color-#9E9B9B">
+                        {{ delivery.pickupStartTime || 'Not specified' }},to,{{ delivery.pickupEndTime || 'Not specified' }}
                     </span>
                 </div>
-                <div class="mb-4">
+                <div class="mb-4" >
                     <span class="font-bold mr-1">Private Information: </span>
-                    <span>{{ delivery.privateInformation }}</span>
+                    <span class="color-#9E9B9B">{{ delivery.privateInformation || 'None provided' }}</span>
                 </div>
                 <div class="mb-4">
-                    <span class="font-bold mr-1">Pickup Location: </span><span>{{ job.pickupLocation }}</span>
+                    <span class="font-bold mr-1">Pickup Location: </span><span class="color-#9E9B9B">{{ job.pickupLocation }}</span>
                 </div>
                 <div>
-                    <span class="font-bold mr-1">Pickup Location Detail: </span><span>{{ job.pickupAddress || '--' }}</span>
+                    <span class="font-bold mr-1">Pickup Location Detail: </span><span class="color-#9E9B9B">{{ job.pickupAddress || 'None provided' }}</span>
                 </div>
             </div>
             </Col>
             <Col :span="12">
             <div class="box-con">
                 <div class="font-size-6 font-bold mb-6">
-                    Receiving person details
+                    Drop-off Details
                 </div>
                 <div class="mb-4">
-                    <span class="font-bold mr-1">Name: </span><span>{{ delivery.receiveContactUserName }}</span>
+                    <span class="font-bold mr-1">Name: </span><span class="color-#9E9B9B">{{ delivery.receiveContactUserName }}</span>
                 </div>
                 <div class="mb-4">
-                    <span class="font-bold mr-1">Contact: </span><span>{{ delivery.receiveContactPhone }}</span>
+                    <span class="font-bold mr-1">Contact: </span><span class="color-#9E9B9B">{{ delivery.receiveContactPhone }}</span>
                 </div>
                 <div class="mb-4">
-                    <span class="font-bold mr-1">Email: </span><span>{{ delivery.receiveContactEmail }}</span>
+                    <span class="font-bold mr-1">Email: </span><span class="color-#9E9B9B">{{ delivery.receiveContactEmail }}</span>
                 </div>
                 <div class="mb-4">
                     <span class="font-bold mr-1">Delivery Deadline: </span>
-                    <span> {{ delivery.deliveryDeadlineTime || 'Flexible' }}</span>
+                    <span class="color-#9E9B9B"> {{ delivery.deliveryDeadlineTime || 'Flexible' }}</span>
                 </div>
                 <div class="mb-4">
-                    <span class="font-bold mr-1">Private Information: </span><span>{{ delivery.privateInformation
+                    <span class="font-bold mr-1">Private Information: </span><span class="color-#9E9B9B">{{ delivery.privateInformation || 'None provided'
                         }}</span>
                 </div>
                 <div class="mb-4">
-                    <span class="font-bold mr-1">Drop-off Location: </span><span>{{ job.dropOffLocation }}</span>
+                    <span class="font-bold mr-1">Drop-off Location: </span><span class="color-#9E9B9B">{{ job.dropOffLocation }}</span>
                 </div>
                 <div>
-                    <span class="font-bold mr-1">Drop-off Location Detail: </span><span>{{ job.dropOffAddress || '--' }}</span>
+                    <span class="font-bold mr-1">Drop-off Location Detail: </span><span class="color-#9E9B9B">{{ job.dropOffAddress || 'None provided' }}</span>
                 </div>
             </div>
             </Col>
@@ -69,7 +69,7 @@
                     <div class="font-size-6 font-bold mb-1">
                         Client Pre-Shipment Images
                     </div>
-                    <div v-if="!delivery?.customerProductImageList?.length">
+                    <div v-if="!delivery?.customerProductImageList?.length" class="color-#9E9B9B">
                         No Images Found
                     </div>
                     <div v-else class="flex">
@@ -84,7 +84,7 @@
                     <div class="font-size-6 font-bold mb-1">
                         Driver Pickup Images
                     </div>
-                    <div v-if="!delivery?.driverProductImageList?.length">
+                    <div v-if="!delivery?.driverProductImageList?.length" class="color-#9E9B9B">
                         No Images Found
                     </div>
                     <div v-else class="flex">
@@ -99,7 +99,7 @@
                     <div class="font-size-6 font-bold mb-1">
                         Drop-Off Images
                     </div>
-                    <div v-if="!delivery?.dropOffImageList?.length">
+                    <div v-if="!delivery?.dropOffImageList?.length" class="color-#9E9B9B">
                         No Images Found
                     </div>
                     <div v-else class="flex">

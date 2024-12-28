@@ -63,7 +63,7 @@
                                     <span>({{ detail.reviewCount }})</span>
                                 </h3>
                                 <div>
-                                    <Button type="primary" class="h-10 font-size-16px px-18px" @click="() => {
+                                    <Button :disabled="detail.showWriteReview == '0' ? true : false" type="primary" class="h-10 font-size-16px px-18px" @click="() => {
                                         modal.jobUid = detail.driverId || ''
                                         modal.visible = true
                                     }

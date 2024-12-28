@@ -30,7 +30,7 @@
             {{ data.descriptiveTitle }}
           </div>
           <div class="p-y-0.5 font-bold font-size-16px flex-1">
-            <span v-if="computedPrice(data) > 0" class="color-sub_text"
+            <span v-if="computedPrice(data) > 0" class="color-#707070"
               >${{ fixTwoRadix(computedPrice(data)) }}</span
             >
             <template
@@ -39,7 +39,7 @@
                 data.tipOrBonus &&
                 data.tipOrBonus > 0
               ">
-              <span v-if="computedPrice(data) > 0" class="p-x-1 color-info"
+              <span v-if="computedPrice(data) > 0" class="p-x-1 color-#707070"
                 >+</span
               >
               <span class="color-primary">{{ priceToFloat(data.tipOrBonus) }}</span>

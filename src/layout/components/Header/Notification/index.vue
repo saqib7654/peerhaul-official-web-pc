@@ -18,7 +18,7 @@
                 <div class="text-center m-t-4">
                     <span v-if="finished">no more</span>
                     <AButton @click="() => fetch()" v-else
-                        >loading more</AButton
+                        >load more</AButton
                     >
                 </div>
             </template>

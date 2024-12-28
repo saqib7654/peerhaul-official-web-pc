@@ -94,7 +94,7 @@
                                 part.</span
                             >
                         </template>
-                        <u class="color-info-color cursor-pointer ml-1"
+                        <u class="color-info-color cursor-pointer ml-1" style="margin-left: 0px;"
                             >here</u
                         > </Tooltip
                     >.</span

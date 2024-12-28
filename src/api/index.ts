@@ -4361,6 +4361,7 @@ export interface MemberDriverDetailResponse {
   avgScore?: number
   reviewCount?: number
   sinceYear?: number
+  showWriteReview?: string
 }
 
 /**

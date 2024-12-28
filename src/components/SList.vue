@@ -4,7 +4,7 @@
       <div class="text-center m-t-4">
         <span v-if="finished && (dataSource?.length || 0) > 0 && showEnd"></span>
         <AButton :loading="loading" v-else-if="!finished" @click="$emit('load')"
-          >loading more</AButton
+          >load more</AButton
         >
       </div>
     </template>
